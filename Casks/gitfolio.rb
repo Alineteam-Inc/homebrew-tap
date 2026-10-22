@@ -6,25 +6,25 @@ cask "gitfolio" do
     end
   end
 
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     on_arm do
-      sha256 "46eed21862a7325006ccc8ced170318518edd7623ce892bab3a1f8cfae0305aa"
+      sha256 "8c768e1d60a465710fd6dbde312497db44b180d8fa4ef423294293041bcbf9e5"
       url "https://github.com/Alineteam-Inc/GitFolio-CLI/releases/download/v#{version}/gitfolio_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a99ef406e4023964fd60599d5766bf28220e84a101adc6931fdd441084a4568f"
+      sha256 "49e579a684a841d0b3116d7f39ce6888b24f79476e8cf21b6748eb0e503043f2"
       url "https://github.com/Alineteam-Inc/GitFolio-CLI/releases/download/v#{version}/gitfolio_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "673d7529c35632494814dd6831014468bea105f09177e48efc52e25766c78e4b"
+      sha256 "b02fb8a746f005de14beb89c77bc523dd95b41524497a44fbf4c3dac6c2eeb68"
       url "https://github.com/Alineteam-Inc/GitFolio-CLI/releases/download/v#{version}/gitfolio_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1535daed6384d5e94d85960499ca1e3d3bcfb267f0be1c5a5617bec24cd49cd6"
+      sha256 "2716e82b9e375d913858775beab84af6e30aed81e247d55b3782448a5600bcfe"
       url "https://github.com/Alineteam-Inc/GitFolio-CLI/releases/download/v#{version}/gitfolio_linux_amd64.tar.gz"
     end
   end
