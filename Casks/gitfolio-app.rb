@@ -3,9 +3,9 @@
 cask "gitfolio-app" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.7"
-  sha256 arm:   "e8a03606caf834d9ab3d147ce4a4844c19812f67f14fda6e3030a3e8a6cd20f3",
-         intel: "84299d7263e5d022315f4683ece08e4542f657c56804f9390359f2a49e894264"
+  version "0.1.8"
+  sha256 arm:   "f9a2bcf474a438db9f2e9e03bba0a8083d1a295d0edf610fe5687912842ce254",
+         intel: "33bd8acd7b9cdb8c4aec93efa3ed0999ff5c9c5be6708ab016f28121a7559a7e"
 
   url "https://github.com/Alineteam-Inc/GitFolio-APP/releases/download/v#{version}/GitFolio_macos_#{arch}.dmg"
   name "GitFolio"
@@ -18,7 +18,7 @@ cask "gitfolio-app" do
   end
 
   auto_updates true
-  depends_on :macos
+  depends_on macos: :ventura
 
   app "GitFolio.app"
 
@@ -33,7 +33,7 @@ cask "gitfolio-app" do
   ]
 
   caveats <<~EOS
-    Before `brew uninstall --cask gitfolio-app`, open GitFolio › About › Uninstall: it removes the git hooks
+    Before `brew uninstall --cask alineteam-inc/tap/gitfolio-app`, open GitFolio › About › Uninstall: it removes the git hooks
     GitFolio added, its daily sync and this computer's login.
   EOS
 end
