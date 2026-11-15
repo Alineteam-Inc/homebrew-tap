@@ -3,9 +3,9 @@
 cask "gitfolio-app" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.8"
-  sha256 arm:   "f9a2bcf474a438db9f2e9e03bba0a8083d1a295d0edf610fe5687912842ce254",
-         intel: "33bd8acd7b9cdb8c4aec93efa3ed0999ff5c9c5be6708ab016f28121a7559a7e"
+  version "0.1.9"
+  sha256 arm:   "d3e418c0308b67f7ed4d05480bd5c457907d4cb8ad5861c7ef33d72110ef9111",
+         intel: "d7cc6c2986bd7b009677c79ca4b5e174414a7b92e95dfe02a2398c2d51802509"
 
   url "https://github.com/Alineteam-Inc/GitFolio-APP/releases/download/v#{version}/GitFolio_macos_#{arch}.dmg"
   name "GitFolio"
